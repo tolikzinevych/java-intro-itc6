@@ -6,8 +6,8 @@ public class PassengerCar extends Vehicle{
     }
 
     @Override
-    public String toString() {
-        return "PassengerCar{} extends" + super.toString();
+    public String toString() { return "PassengerCar{} extends " + super.toString();
     }
+
 }
-}
+

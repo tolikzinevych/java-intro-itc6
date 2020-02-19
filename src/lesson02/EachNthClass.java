@@ -9,7 +9,7 @@ public class EachNthClass {
         this.n = n;
     }
 
-    public String eachNth() {
+    public String everyNth() {
         if (text.isEmpty()) {
             return "Text shouldn't be empty";
         }
@@ -18,5 +18,11 @@ public class EachNthClass {
             s = s + text.charAt(i);
         }
         return s;
+    }
+    public static void main(String[] args) {
+        EachNthClass enc = new EachNthClass("abcdefgh", 2);
+        String s = enc.everyNth();
+        System.out.println(s);
+
     }
 }

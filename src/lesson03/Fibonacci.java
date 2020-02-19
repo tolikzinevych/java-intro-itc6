@@ -1,4 +1,4 @@
-package lesson03;
+/*package lesson03;
 
 public class Fibonacci {
     public void printFibonacciNumbers(int n){
@@ -9,4 +9,4 @@ public class Fibonacci {
 //b=a+b (last iteration)
       }
 
-}
+}*/
