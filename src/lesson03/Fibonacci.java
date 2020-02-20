@@ -25,7 +25,7 @@ public class Fibonacci {
         return s;
     }
         public static void main(String[] args) {
-            Fibonacci Arr = new Fibonacci(4);
+            Fibonacci Arr = new Fibonacci(10);
             String s = Arr.printFibonacciNumbers();
             System.out.println("0, " + s);
 
