@@ -21,7 +21,7 @@ public class EachNthClass {
     }
     public static void main(String[] args) {
         EachNthClass enc = new EachNthClass("abcdefgh", 2);
-        String s = enc.everyNth();
+        String s = enc.everyNth("abcdefg", 2);
         System.out.println(s);
 
     }
