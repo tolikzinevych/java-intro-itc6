@@ -14,8 +14,13 @@ public class EachNthClass {
     }
     public static void main(String[] args) {
         EachNthClass enc = new EachNthClass();
-        String s = enc.everyNth("abcdefgdsgdhfdshf", 2);
+        String s = enc.everyNth("Miracle", 2);
         System.out.println(s);
+        s = enc.everyNth("abcdefg", 2);
+        System.out.println(s);
+        s = enc.everyNth("abcdefg", 3);
+        System.out.println(s);
+
 
     }
 }
