@@ -9,7 +9,7 @@ public class EachNthClass {
         this.n = n;
     }
 
-    public String everyNth() {
+    public String everyNth(String text, int n) {
         if (text.isEmpty()) {
             return "Text shouldn't be empty";
         }
