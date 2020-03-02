@@ -7,8 +7,8 @@ import java.util.Iterator;
 
 public class MyCollection {
     public static void main(String[] args) {
-        ArrayList<String> bands = new ArrayList<String>(6);
-        ArrayList<String> bands1 = new ArrayList<String>(6);
+        ArrayList<String> bands = new ArrayList<String>();
+        ArrayList<String> bands1 = new ArrayList<String>();
         bands.add("Iron Maiden");
         bands.add("Manowar");
         bands.add("Helloween");
@@ -17,8 +17,8 @@ public class MyCollection {
         bands.add("Metallica");
 //        System.out.println(bands);
         bands.remove("Manowar");
+        Collections.copy(bands1, bands);
         System.out.println(bands);
-        Collections.copy(bands, bands1);
 
         Collections.sort(bands);
         System.out.println(bands);
@@ -28,6 +28,7 @@ public class MyCollection {
             String obj = (String) iterator.next();
             System.out.println(obj);
         }
+        System.out.println("\nAfter copying:\n");
         Iterator iterator1 = bands1.iterator();
         while (iterator1.hasNext()) {
             String obj1 = (String) iterator1.next();
