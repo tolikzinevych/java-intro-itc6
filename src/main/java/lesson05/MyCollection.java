@@ -17,21 +17,27 @@ public class MyCollection {
 //        System.out.println(bands);
         bands.remove("Manowar");
         ArrayList<String> bands1 = new ArrayList<String>(bands);
-        System.out.println(bands);
-        Collections.sort(bands);
-        System.out.println(bands);
+         System.out.println(bands);
+
+           Collections.sort(bands);
+            System.out.println(bands);
+
+        System.out.println("\n");
+
+        Iterator iterator1 = bands1.iterator();
+         while (iterator1.hasNext()) {
+            String obj1 = (String) iterator1.next();
+             System.out.println(obj1);
+        }
+        System.out.println("\n");
 
         Iterator iterator = bands.iterator();
-        while (iterator.hasNext()) {
+         while (iterator.hasNext()) {
             String obj = (String) iterator.next();
-            System.out.println(obj);
+             System.out.println(obj);
         }
-        System.out.println("\nAfter copying:\n");
-        Iterator iterator1 = bands1.iterator();
-        while (iterator1.hasNext()) {
-            String obj1 = (String) iterator1.next();
-            System.out.println(obj1);
-        }
+
+
     }
 }
 
