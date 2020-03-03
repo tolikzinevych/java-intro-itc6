@@ -1,7 +1,5 @@
 package lesson08.b_no_waits_is_pain;
 
-import java.util.concurrent.TimeUnit;
-
 import org.hamcrest.CoreMatchers;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -10,6 +8,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.concurrent.TimeUnit;
 
 public class MyFirstTest {
 

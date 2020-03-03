@@ -8,7 +8,6 @@ import java.util.Iterator;
 public class MyCollection {
     public static void main(String[] args) {
         ArrayList<String> bands = new ArrayList<String>();
-        ArrayList<String> bands1 = new ArrayList<String>();
         bands.add("Iron Maiden");
         bands.add("Manowar");
         bands.add("Helloween");
@@ -17,9 +16,8 @@ public class MyCollection {
         bands.add("Metallica");
 //        System.out.println(bands);
         bands.remove("Manowar");
-        Collections.copy(bands1, bands);
+        ArrayList<String> bands1 = new ArrayList<String>(bands);
         System.out.println(bands);
-
         Collections.sort(bands);
         System.out.println(bands);
 
